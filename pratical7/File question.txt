@@ -1,0 +1,11 @@
+Question: How have new cases and total cases developed over time in Spain?
+
+line number: 58-71
+
+Discussion
+There was no case in Spain before 2020-2-29
+The numbers of new cases in Spain were small at the beginning.
+After around 2020-03-08 it began to increase rapidly.
+The total cases increased exponentially.
+The rate of increasing went down between 2020-3-26 and 2020-3-31
+
