@@ -7,7 +7,7 @@ os.chdir("/Users/caishuo/Desktop/IBI1_2020-21/pratical7")
 covid_data = pd.read_csv("full_data.csv")
 
 #There is correct code for showing all columns, and every second row between (andincluding) 0 and 10
-covid_data.iloc[0:10:2, :]
+covid_data.iloc[0:12:2, :]
 
 #You have successfully used a Boolean to show “total cases” for all rows corresponding to Afghanistan.
 covid_data.loc[covid_data.loc[:,"location"] == "Afghanistan", 'total_cases']
