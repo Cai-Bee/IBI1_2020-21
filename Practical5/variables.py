@@ -17,3 +17,9 @@ Y=False
 
 Z = (X and not Y) or (Y and not X)
 W = X!=Y
+#W == Z for all 4 combinations of X and Y (TRUE/FALSE)
+bool = [True, False]
+for X in bool:
+    for Y in bool:
+        p = Z==W
+        print("When X = "+str(X)+", Y = "+str(Y)+"   Z==W is "+str(p))
