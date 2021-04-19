@@ -24,5 +24,6 @@ for country in(countries):
 fig1, ax1 = plt.subplots(1,1)
 ax1.pie(sizes, labels=countries, autopct='%1.1f%%',
         shadow=False, startangle=110)
+ax1.set_title("percentage of coronavirus cases for fivecountries")
 print(cases)
 plt.show()
