@@ -1,6 +1,10 @@
 import os
 import re
-os.chdir('/Users/caishuo/Desktop/IBI1_2020-21/practical8')
+#This work when operating in terminal
+os.chdir('/Users/caishuo/github/IBI1_2020-21/practical8')
+import sys
+#This work when running as a module
+os.chdir(sys.path[0])
 
 #read data from the initial fatsa document
 fr = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
