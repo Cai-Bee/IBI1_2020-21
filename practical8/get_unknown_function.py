@@ -26,7 +26,7 @@ for i in unknown_seq_data:
     length = str(len(seq))                                   #measure the sequence's length
 
     #generate the gene name and length as the new discribe line
-    simplified_name = gene_name + "          " + length
+    simplified_name = ">" + gene_name + "          " + length
     #generate new data contains thenameofthegene,thelengthofthe encoded protein and the protein sequence
     k = re.sub(r'^.*\]', simplified_name, j) + '\n'
     un.write(k)                           #write unknown_function genes' data into the new file
