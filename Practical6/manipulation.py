@@ -5,9 +5,9 @@ gene_lengths = np.array([9410,394141,4442,105338,19149,76779,126550,36296,842,15
 exon_counts = np.array([51,1142,42,216,25,650,32533,57,1,523])
 
 #cauculate average exon length, which equal to gene_lengths divide by exon_counts
-average_exon_length = gene_lengths/exon_counts
-
-print(average_exon_length)
+L = L.tolist()
+L.sort()
+print("list of sorted values for the average exon length across all 10 genes\n",L)
 
 # Create a figure instance
 fig = plt.figure(figsize=(6,5))
