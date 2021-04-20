@@ -1,8 +1,7 @@
 #get name input
 print("please input a filename as the new fasta file to be written to")
-print("File name?")
 
-name = input()
+name = input("File name?")
 
 import os
 import re
@@ -36,12 +35,17 @@ def translate_dna(sequence):
             proteinsequence += codonTable[sequence[n:n + 3]]
     return proteinsequence
 
-os.chdir('/Users/caishuo/Desktop/IBI1_2020-21/practical8')
+#This work when operating in terminal
+os.chdir('/Users/caishuo/github/IBI1_2020-21/practical8')
+import sys
+#This work when running as a module
+os.chdir(sys.path[0])
+
 #read data from the initial fatsa document
 fr = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r')
 data = fr.read()
 
-os.chdir('/Users/caishuo/Desktop/IBI1_2020-21/practical8')
+
 #find all gene data with the discription 'unknown function'.
 unknown_seq_data = re.findall(r'[^>]+unknown.function[^>]+', data)
 
@@ -58,7 +62,7 @@ for i in unknown_seq_data:
     pro_seq = translate_dna(seq)                             #get proteins' sequences
     length = str(len(pro_seq))                               #get proteins' sequence length
     j = re.sub(r'[^\n]+$', pro_seq, j)
-    simplified_name = gene_name + "          " + length
+    simplified_name = ">" + gene_name + "          " + length
     k = re.sub(r'^.*\]', simplified_name, j) + '\n'          #generate the gene name and protein sequence's length as the new discribe line
     un.write(k)                           #write unknown_DNA_to_protein data into the new file
 
