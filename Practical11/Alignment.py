@@ -92,7 +92,7 @@ for a in range(0, len(seq_bank)-1):
                 identical_score += 1            # (how many amino acids are identical)
             if (pair[0][i], pair[1][i]) in blosum62:
                 sum += blosum62[pair[0][i], pair[1][i]]
-            if (pair[1][i], pair[0][i]) in blosum62:
+            elif (pair[1][i], pair[0][i]) in blosum62:
                 sum += blosum62[pair[1][i], pair[0][i]]
         score = sum/len((pair[0]))              #to make the output score comparable
         score = ('%.2f' % score)                #the score need to be devided with sequence length. So it becomes a ratio.

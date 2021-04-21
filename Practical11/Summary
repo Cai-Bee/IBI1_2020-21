@@ -12,12 +12,12 @@
 
 # For alignment between SOD2_human (NP_000627.2) and SOD2_mouse (NP_038699.2):
 # The percentage of identical animo acids is 89.64%.
-# alignment score of BLOSUM62 is 9.82
+# alignment score of BLOSUM62 is 4.91
 
 ## interpretation:
 
 # I found that the SOD2 protein sequences of human and mouse are very similar comparing to random sequence.
 # The percentage of identical animo acids is 89.64%, which is far higher than 5.41% and 5.86% of alignment with random sequence.
-# The alignment scores between human and mouse sequence (9.82) is also significantly high.
+# The alignment scores between human and mouse sequence (4.91) is also significantly high.
 # These findings indicate that the SOD2 protein is evolutionarily conserved.
 # Human and mouse might have a same origin, and further suggests that human and mouse come from the same ancestral species.
