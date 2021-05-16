@@ -89,17 +89,26 @@ for molecule in molecule_list:
 #Draw a pie chart describing the of childNodes of DNA, RNA, protein and oligosaccharide.
 import matplotlib.pyplot as plt
 #give attribute to the plot.
-labels = 'DNA', 'RNA', 'protein', 'oligosaccharide'
+labels = []
+#generate labels cotain name and count of four molecules for the pie chart.
+for molecule in molecule_list:
+    label = molecule+':'+str(name[molecule+'_count'])
+    labels.append(label)
+
+labels = tuple(labels)
 sizes = count_list
-explode = (0.01,0.01,0,0.15)
-ax1.axis('equal')
+explode = (0.01,0.01,0.005,0.15)
+colors = ['#90EE90', '#87CEFA', '#F5DEB3', '#FFB6C1']
+
 fig1, ax1 = plt.subplots(figsize=(8, 4))
-ax1.pie(sizes,explode=explode,labels=labels,autopct='%1.1f%%',shadow=False,startangle=150)
+# ax1.axis('equal')
+ax1.pie(sizes,explode = explode, labels = labels, autopct = '%1.1f%%', shadow = False,
+        startangle = 150, colors=colors)
 
 ax1.legend(molecule_list,
           title="molecule",
           loc="center left",
           bbox_to_anchor=(1, 0, 0.5, 1))
 
-ax1.set_title('ChildNodes of four biological ')
+ax1.set_title('ChildNodes of four biological macromolecules')
 plt.show()
