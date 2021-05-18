@@ -2,6 +2,7 @@
 print("please input a filename as the new fasta file to be written to")
 
 name = input("File name?")
+name += '.fa'
 
 import os
 import re
