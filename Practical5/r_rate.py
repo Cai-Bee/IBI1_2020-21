@@ -1,4 +1,4 @@
-r=1.1 #The rate of reproduction of a virus
+r=1.2 #The rate of reproduction of a virus
 I=84 #number of initial infected individuals
 
 T = I
