@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #The following sentence works when the whole cript work.
+#(Even the code are download to another conputer, this command can change working directory to where this py file are)
 os.chdir(sys.path[0])
 #The following sentence works when typing commands directly to my terminal.
 os.chdir("/Users/caishuo/github/IBI1_2020-21/Practical7")
@@ -17,18 +18,18 @@ table1 = covid_data.iloc[0:12:2, :]
 print("\n>all columns, and every second row between (andincluding) 0 and 10")
 print(table1)
 
-#You have successfully used a Boolean to show “total cases” for all rows corresponding to Afghanistan.
+#used a Boolean to show “total cases” for all rows corresponding to Afghanistan.
 table2 = covid_data.loc[covid_data.loc[:,"location"] == "Afghanistan", 'total_cases']
 print("\n>total cases” for all rows corresponding to Afghanistan")
 print(table2)
 
-#You have correctly computed the mean and median of new cases for the entire world.
+#computed the mean and median of new cases for the entire world.
 world_new_cases = covid_data.loc[covid_data.loc[:,"location"] == "World", 'new_cases']
 mean = str(np.mean(world_new_cases))
 median = str(np.median(world_new_cases))
 print("\n>the mean and median of new cases for the entire world are respectively "+mean+" and "+median)
 
-#You have successfully created a boxplot of new cases worldwide.
+#created a boxplot of new cases worldwide.
 boxprops = dict(color  = 'lightblue',facecolor = 'paleturquoise', linewidth=2.0)
 medianprops = dict(linestyle='-.', linewidth=2.0, color='teal')
 capprops = dict(color = 'teal', linewidth=2.0)
@@ -52,7 +53,7 @@ ax1.set_ylabel('case distribution')
 ax1.yaxis.grid(True, linestyle='-', which='major', color='lightgrey', alpha=0.5)
 plt.show()
 
-#You have successfully plotted both new cases and new deaths worldwide.
+#plotted both new cases and new deaths worldwide.
 world_dates = covid_data.loc[covid_data.loc[:,'location'] == "World", 'date']
 world_new_cases = covid_data.loc[covid_data.loc[:,'location'] == "World", 'new_cases']
 world_new_deaths = covid_data.loc[covid_data.loc[:,'location'] == "World", 'new_deaths']
