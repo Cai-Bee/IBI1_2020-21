@@ -3,7 +3,7 @@
 > _What I have done to address formative feedback_
 
 ## Practical4:
-- Modify content of [my git hub website](Cai-Bee.github.io). Brief introduce myself on the website.
+- Modify content of [my git hub website](https://cai-bee.github.io/). Brief introduce myself on the website.
 - In the file _thingsIlike.txt_, I change things I like from number(1,2,3...) to real things.
 - Add reflection to the file _Reflection.txt_
 - For **commit message**, I try to make them more informative when committing.
