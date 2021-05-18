@@ -23,11 +23,12 @@ def translate_dna(sequence):
     proteinsequence = ''
     #select every three letters and recognize them as a codon
     for n in range(0, len(sequence), 3):
+        #find the codon in the dictionary and return its corresponding amino acid
         if sequence[n:n + 3] in codonTable.keys():
-    #add newly recognized codon to the proteinsequence
+    #add recognized amino acid to the proteinsequence
             proteinsequence += codonTable[sequence[n:n + 3]]
     return proteinsequence
 
 #create the string variable seq
 seq = 'ATGCGACTACGATCGAGGGCC'
-print(translate_dna(seq))
+print('The amino acid sequence is: '+translate_dna(seq))
