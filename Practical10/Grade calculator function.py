@@ -9,6 +9,7 @@ def calculator():
 
 
 #example of how the function should be called
+print('example of how the function should be called:')
 calculator()
 Someone
 95
