@@ -1,11 +1,11 @@
 
-I like 1
-I like 2
-I like 3
-I like 4
-I like 5
-I like 6
-I like 7
-I don't like a
-I don't like b
-I don't like c
+I like Jazz
+I like football
+I like biology
+I like programming
+I like IBMS
+I like ICMB
+I like IBI
+I don't like failing the exam
+I don't like eating
+I don't like eggplant
