@@ -1,4 +1,4 @@
-# Responds to summative feedback
+# Responds to formative feedback
 
 > _What I have done to address formative feedback_
 
