@@ -5,9 +5,8 @@ class Student:
         self.last_name = last_name
         self.undergraduate_programme = undergraduate_programme
     def info(self):
-        print(self.last_name+self.first_name+"      "+self.undergraduate_programme)
+        print(self.last_name+" "+self.first_name+"      "+self.undergraduate_programme)
 
 #example of using this class
 A = Student('Shuo', 'Cai', 'BMI')
 A.info()
-    
