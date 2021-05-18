@@ -1,6 +1,7 @@
 #define the function
 def rev(seq):
     complement = ""
+    #change every base to its reversal base
     for base in seq:
         if base == "A" or base == "a":
             complement += ("T")
