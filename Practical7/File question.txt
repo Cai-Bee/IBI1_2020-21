@@ -7,4 +7,4 @@ There was no case in Spain before 2020-2-29
 The numbers of new cases in Spain were small at the beginning.
 After around 2020-03-08 it began to increase rapidly.
 The total cases increased exponentially after the first few cases emerged.
-The increasing rate went down between 2020-3-26 and 2020-3-31, which suggest the situation there might had been already controlled.
+The increasing rate went down between 2020-3-26 and 2020-3-31, which suggests the situation there might have been already controlled.
